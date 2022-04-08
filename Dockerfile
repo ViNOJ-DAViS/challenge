@@ -1,8 +1,10 @@
 # Dockerfile, Image, Container
 FROM python:3.8
 
-ADD binance_data_monitor.py .
+ADD README .
+ADD challenge_part1.py .
+ADD challenge_part2.py .
 
-RUN pip install websockets
+RUN pip install websockets pandas
 
 CMD [ "cat", "README"]
